@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>B-Aware Privacy Policy</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    color: #1f2621;
+    background: #f6f7f3;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 22px 72px;
+  }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 8px; letter-spacing: -0.02em; }
+  h2 { font-size: 1.15rem; margin: 36px 0 10px; letter-spacing: -0.01em; }
+  p, li { font-size: 1rem; }
+  .meta { color: #5c665e; font-size: 0.95rem; margin: 0 0 4px; }
+  .card {
+    background: #fff;
+    border: 1px solid #e2e6de;
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin: 24px 0;
+  }
+  .card p:first-child { margin-top: 0; }
+  .card p:last-child { margin-bottom: 0; }
+  a { color: #2f6b45; }
+  code { background: #ecefe9; padding: 1px 5px; border-radius: 5px; font-size: 0.9em; }
+  ul { padding-left: 1.25rem; }
+  li { margin: 6px 0; }
+  footer { margin-top: 48px; color: #5c665e; font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>B-Aware Privacy Policy</h1>
+  <p class="meta"><strong>Effective date:</strong> 26 October 2026</p>
+  <p class="meta"><strong>Publisher:</strong> Sareena Shah</p>
+  <p class="meta"><strong>Privacy contact:</strong> <a href="mailto:sareenash94@gmail.com">sareenash94@gmail.com</a></p>
+  <p class="meta"><strong>App:</strong> B-Aware for Android (<code>com.bawareapp.timer</code>)</p>
+
+  <div class="card">
+    <p><strong>The short version:</strong> B-Aware shows you how long you have spent in the apps you choose. Everything it measures stays on your phone. B-Aware has no internet permission, no account, no analytics, and no advertising. It does not read what you type or what is on your screen, and it does not upload your usage.</p>
+  </div>
+
+  <h2>1. What B-Aware does</h2>
+  <p>B-Aware lets you select installed apps and set gentle time stages. When you open a selected app, B-Aware can show a small floating timer or a notification timer. At the stages you choose, the timer changes colour, and it can blink softly if you enable that. B-Aware is a reminder, not a blocker: it does not lock apps or prevent you from using them.</p>
+
+  <h2>2. Information B-Aware processes on your device</h2>
+  <p>To run the timer, B-Aware processes the following <strong>on your device only</strong>:</p>
+  <ul>
+    <li><strong>App identity:</strong> package identifiers and display labels for launchable apps, and the list of apps you choose to track. Android supplies this so B-Aware can show you a list and follow the apps you select.</li>
+    <li><strong>Usage information:</strong> foreground and background events for the apps you selected, the accumulated timer totals, daily totals, and small service checkpoints used to keep the timer accurate.</li>
+    <li><strong>Settings:</strong> your timer stages, colours, blink preference, display mode, and per-app overrides.</li>
+    <li><strong>Permission and service state:</strong> whether the Android permissions B-Aware needs are available, and whether tracking is running.</li>
+  </ul>
+  <p>B-Aware does not read the content of other apps, your keystrokes, your messages, your files, your camera, your microphone, or your screen contents. It does not collect your name, email address, contacts, location, or advertising identifier.</p>
+
+  <h2>3. Where the information is stored, and what is sent</h2>
+  <p>All of the information above is stored in B-Aware's private storage on your device, using Android and Flutter shared preferences.</p>
+  <p><strong>B-Aware does not have Android's <code>INTERNET</code> permission.</strong> The current version has no account, no server, no cloud sync, no analytics, no crash-reporting SDK, and no advertising SDK. Nothing described in this policy is transmitted off your device by B-Aware.</p>
+  <p>B-Aware sets <code>android:allowBackup="false"</code> and excludes its preferences from Android cloud backup and device-to-device transfer. Some device manufacturers may still include app data in their own migration tools despite that setting. Android and device services operate under their own terms and privacy practices, which are outside B-Aware's control.</p>
+
+  <h2>4. Permissions and why B-Aware asks for them</h2>
+  <ul>
+    <li><strong>Usage Access</strong> — lets B-Aware notice when one of your selected apps is in the foreground so it can count time. This is the core of the timer. B-Aware reads only the events needed for the apps you selected; it does not read app content.</li>
+    <li><strong>Display over other apps</strong> — lets B-Aware show the floating timer pill over a selected app. This is optional and is used only when you choose the pill display.</li>
+    <li><strong>Notifications</strong> — lets B-Aware show the ongoing tracking status and, if you choose it, the notification timer.</li>
+    <li><strong>Foreground service</strong> — keeps the timer running while you are inside another app. Android requires a visible notification while it runs. Tracking starts only when you tap <em>Start tracking</em> and stops when you stop it.</li>
+  </ul>
+  <p>You can revoke any permission in Android Settings. Revoking a required permission may stop the related feature or stop tracking.</p>
+
+  <h2>5. Your choices and deletion</h2>
+  <p>You choose which apps to track, and you can change your timer settings or reset an app's timer at any time.</p>
+  <p><strong>Delete local data</strong> in B-Aware's Settings removes your selected apps, timer totals, daily usage history, and timer preferences from this installation, and stops tracking. It does not revoke Android permission grants. Uninstalling B-Aware may also remove its private data, subject to Android and device behaviour.</p>
+  <p>Because there is no account, there is no account data and no account-deletion process. If an account or sync feature is added later, this policy and the in-app disclosure will be updated before that version is released.</p>
+
+  <h2>6. Children</h2>
+  <p>B-Aware is intended for people aged <strong>13 and over</strong> and is not directed to children under 13. B-Aware does not knowingly collect personal information from children. If you believe a child has provided information to B-Aware, contact us at sareenash94@gmail.com.</p>
+
+  <h2>7. Retention</h2>
+  <p>Local usage data remains on your device until you use <em>Delete local data</em>, clear the app's data in Android Settings, or uninstall B-Aware. B-Aware does not keep a separate automatic retention period and does not retain a copy anywhere else.</p>
+
+  <h2>8. Sharing and selling</h2>
+  <p>B-Aware does not sell, rent, or share your usage data with third parties. There are no advertising networks, analytics providers, or data brokers in the app.</p>
+
+  <h2>9. Changes to this policy</h2>
+  <p>If B-Aware's data practices change, we will publish an updated policy with a new effective date before the change ships. The current version will always be available at this URL.</p>
+
+  <h2>10. Contact</h2>
+  <p>Questions or requests about privacy can be sent to <strong>sareenash94@gmail.com</strong>.</p>
+  <p>This policy is governed by the laws of Ontario, Canada, without regard to conflict-of-law rules.</p>
+
+  <footer>
+    <p>B-Aware · Privacy Policy · Effective 26 October 2026</p>
+  </footer>
+
+</main>
+</body>
+</html>
